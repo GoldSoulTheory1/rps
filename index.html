@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My HTML Document</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>Welcome to Rock Paper Scissors</title>
+</head>
+<body>
+	<h1>Welcome to Rock Paper Scissors</h1>
+	<p>Here are the rules:</p>
+	<ol>
+		<li>Rock beats Scissors</li>
+		<li>Paper beats Rock</li>
+		<li>Scissors beats Paper</li>
+	</ol>
+
+	<form id="gameForm">
+		<label for="choice">Enter your choice (rock, paper, or scissors):</label>
+		<input type="text" id="choice" name="choice" pattern="(rock|paper|scissors)" required>
+		<button type="submit">Submit</button>
+	</form>
+
+	<script src="game.js"></script>
+</body>
 </html>
